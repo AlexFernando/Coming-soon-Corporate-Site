@@ -123,8 +123,8 @@ const ImageBackground = () => {
                              color: #FFF;
                         }
                     `} 
-                         href="#mailgo" data-address="info" data-domain="3allez.com" >Notify Us</Button>
-                    <Button href="#about">Explore</Button>
+                         href="#mailgo" data-address="info" data-domain="3allez.com" >Contact Us</Button>
+                    <Button href="#about">Learn</Button>
                 </ButtonContainer>
             </TextoImagen>
         </ImageBgTech>    

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
 
@@ -24,7 +23,7 @@ export const MainContainer = styled.div`
 `
 
 export const Title = styled.span`
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     color:#fff;
@@ -40,7 +39,7 @@ export const SubTitle = styled.h2 `
     display: flex;
     flex-wrap: nowrap;
     align-items: center;   
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: 1px;
@@ -60,7 +59,7 @@ export const Separator = styled.span`
     background: linear-gradient(to right, #636BFF, #1b9dff);
 `
 
-const TextContent = styled.div`
+export const TextContent = styled.div`
 
     line-height: 2;
     color: #fff;
@@ -77,20 +76,21 @@ const TextContent = styled.div`
     p {
         line-height: 1.6;
         letter-spacing: 0;
-        margin: 0; 
+        margin-bottom: 2rem; 
+        font-size: 1.8rem;
     
         @media(min-width: 768px) {
             text-align: justify;
+            font-size: 1.8rem;
         }
     }
 `
 
-const List =  styled.ul`
-    margin-top: 2rem;
+export const List =  styled.ul`
     letter-spacing: 0;
 `
 
-const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
+export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
         font-family: 'Font Awesome\ 5 Free';
         margin-right: 5px;
         color: #1b9dff;
@@ -109,21 +109,35 @@ const ContenidoInicio = () => {
             <Separator></Separator>
 
             <div>
+
                 <TextContent><p>Our proposal seeks to bring your business to automation based on the right combination of business, processes, and technology. We believe that these three aspects are the pillars that must be chosen properly for the business to achieve its business objectives and successfully position itself in the digital age.
                 Our proposal to approaching projects incorporates and is based on these three visions of your organization's activity. In this way, first of all, we seek to incorporate the ideal stuff who understand your business and its processes, to finally choose the right techniques and technologies for the project objectives.    
-                    </p></TextContent>
+                    </p>
+                    
+                      
+                    
+                    </TextContent>
                 
                 <TextContent>
-                    <p>Our services can be applied in different sectors of the economy. Those includes: 
+                
+                        
                         <List>
-                            <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Agriculture</li>
-                            <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Banking</li>
-                            <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Education</li>
-                            <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Mining Sector</li>
-                            <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Oil Sector</li>
-                            <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Supply Chain</li>
-                        </List> 
-                    </p>
+                        <p> Our services can be applied in different sectors of the economy. 
+                        Those includes: </p>
+                        
+                        <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Agriculture</li>
+                        <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Banking</li>
+                        <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Education</li>
+                        <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Mining Sector</li>
+                        <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Oil Sector</li>
+                        <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Supply Chain</li>
+                    </List>        
+                
+                        
+                        
+
+                        
+                    
                 </TextContent>
             </div>
         </MainContainer>

@@ -1,24 +1,32 @@
 [
     {
-      "title": "Fundamentos",
-      "category": "Governance, Strategic planning and Risk management in IT",
-      "description": "La organización competente en lo digital debe fundarse sobre una base adecuada, esto significa no solamente el contar con infraestructura de hardware, sino también de la infraestructura adecuada en software. En la actualidad buena parte de lo último se apoya en el uso de servicios de computación en la nube.",
-      "image": "nessia.png",
-      "alt": "nessia"
+      "title": "IT Consulting",
+      "category": "Advice, Consulting, IT Management",
+      "description": "Governance -IT Strategic planning -IT Risk Management",
+      "image": "consulting_TI.jpg",
+      "alt": "consulting"
     },
     {
-      "title": "Procesos",
-      "category": "Logistic, data analitics, DevOps",
-      "description": "La organización que ya está cimentada sobre una base o plataforma digital adecuada busca llevar sus procesos a este entorno. Esto requiere no solamente de emplear herramientas de ofimática o mensajería electrónica, sino de incorporar herramientas especializadas de acuerdo a su industria y las áreas de negocio que tengan mayor relevancia para su caso.",
-      "image": "huddol_homepage.png",
-      "alt": "Huddol homepage"
+      "title": "Infrastructure Service",
+      "category": "Hardware, Software, Cloud",
+      "description": "Infrastructure solutions, on premise, hybrid and in the cloud",
+      "image": "cloudcomputing.jpg",
+      "alt": "cloudcomputing"
     },
     {
-      "title": "Especificaciones",
-      "category": "Platforms of Digital Collaboration",
-      "description": "Our services can be applied in different sectors of the economy like agriculture, banking, education, mining, supply chain, etc. Those services includes: IT Consulting, Infrastructure Service, Application Service and Systems integration",
-      "image": "digispeed.png",
-      "alt": "Digispeed homepage"
+      "title": "Application Service",
+      "category": "Management Applications, Microsoft Package",
+      "description": "Implementation of Office 365 -Implementation of Microsoft Dynamics CRM -Migration of Microsoft Dynamics CRM on premise to Cloud -Solutions of Microsoft Dynamics CRM (Support, Evolution)",
+      "image": "microsoft.png",
+      "alt": "microsoft"
+    },
+
+    {
+      "title": "System's Integration",
+      "category": "Integration tools",
+      "description": "Integration Solutions of Collaboration Tools -Integration Solutions of Marketing Automation Tools",
+      "image": "consulting-guys.jpg",
+      "alt": "Integration_tools"
     }
  ]
   

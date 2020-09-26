@@ -8,7 +8,6 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     flex: 0 0 50%;
-    
 
     h4 {
         font-size: 1.8rem;
@@ -40,9 +39,34 @@ const Contact = () => {
 
             <div css={css`
                 display: flex;
-                
-            `}
-            >
+                flex-direction: column;
+
+                @media (min-width: 768px) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+            `}>
+
+                <div css={css`
+                    @media (min-width: 768px) {
+                        text-align: center;
+                    }
+                `}    
+                >
+                    <ContactContainer>
+                        
+                        <h4>Let's build something together</h4>
+                        <p>We'd like to hear from you
+                            <br></br>
+                                Send us a message
+                            <br></br>
+                            <a href="#mailgo" data-address="info" data-domain="3allez.com">info@3allez.com</a>
+                        </p>
+
+                    </ContactContainer>
+                    
+                </div>
+
                 <div css={css`
                     @media (min-width: 768px) {
                         display: flex;
