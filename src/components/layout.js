@@ -28,6 +28,10 @@ const Layout = (props) => {
                     h1 {
                         font-family: 'PT Sans', sans-serif;
                     }
+
+                    p, span, li , ul {
+                        font-family: 'Roboto', serif;
+                    }
                     ul {
                         list-style: none;
                         margin: 0;

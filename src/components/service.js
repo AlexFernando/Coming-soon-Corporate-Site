@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import {faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIconStyled} from './contenidoInicio'
 
 const ServiceInfo = styled.div`
     display:flex;
@@ -11,7 +14,7 @@ const ServiceInfo = styled.div`
     @media (min-width: 768px) {
         padding: 0 2rem;
         
-        &:first-child {
+        &:first-of-type {
             padding-left: 0;
         }
         &:last-child {
@@ -50,6 +53,8 @@ const Service = ({service}) => {
 
     const {title, description, category, image, alt} = service
 
+    let descriptionSplitted = description.split('-');
+
     return ( 
         
         <ServiceInfo>
@@ -59,7 +64,13 @@ const Service = ({service}) => {
                 <small>{category}</small>
             </a>
 
-            <p>{description}</p>
+            <p> {descriptionSplitted.map( itemService => (
+                   <li css={css`
+                       list-style: none;
+                   `}
+                    key = {itemService}
+                   ><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>{itemService}</li>
+           ))}</p>
         </ServiceInfo>
      );
 }
