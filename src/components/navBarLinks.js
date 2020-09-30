@@ -10,6 +10,8 @@ const NavItem = styled(Link)`
   margin: 0 1vw;
   transition: all 200ms ease-in;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
   
   :hover {
     background-color: rgba(34,49,63, .7);

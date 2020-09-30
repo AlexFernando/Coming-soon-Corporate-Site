@@ -23,7 +23,6 @@ const ServiceInfo = styled.div`
     }
 
     a {
-        font-weight: 700;
         text-decoration: none;
         cursor: pointer;
         color: #FFF;
@@ -40,6 +39,11 @@ const ServiceInfo = styled.div`
             text-transform: uppercase;
             color: #878787;
         }
+
+    }
+
+    ul {
+        margin-top: 1rem;
     }
 
     p {
@@ -59,18 +63,26 @@ const Service = ({service}) => {
         
         <ServiceInfo>
             <a href="/" >
-                <Image fluid = {image.sharp.fluid} />
+                <Image css= {css`
+                    @media (min-width: 801px) {
+                        width: 220px;
+                        height: 150px;
+                    }
+                `}  
+                fluid = {image.sharp.fluid} 
+                alt = {alt}
+                />
                 <h3>{title}</h3>
                 <small>{category}</small>
             </a>
 
-            <p> {descriptionSplitted.map( itemService => (
+            <ul> {descriptionSplitted.map( itemService => (
                    <li css={css`
                        list-style: none;
                    `}
                     key = {itemService}
                    ><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>{itemService}</li>
-           ))}</p>
+           ))}</ul>
         </ServiceInfo>
      );
 }

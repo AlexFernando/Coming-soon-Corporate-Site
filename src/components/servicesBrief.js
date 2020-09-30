@@ -96,7 +96,7 @@ const ServicesBrief = () => {
             
             <ListOfServices>
                 {listOfServices.map( service => (
-                   
+
                         <Service 
                             key = {service.title}
                             service = {service}

@@ -9,21 +9,31 @@ const ContactContainer = styled.div`
     flex-direction: column;
     flex: 0 0 50%;
 
-    h4 {
+    h3 {
         font-size: 1.8rem;
         margin-bottom: .5rem;
         text-transform: uppercase;
         color: #636BFF;
+
+        @media(min-width: 768px) {
+            font-size: 2.2rem;
+        }
     }
 
     p {
         margin-bottom: 2.5rem;
         margin-top: 0;
         color: #FFF;
+        font-family: 'PT Sans', sans-serif;
+
+        @media(min-width: 768px) {
+            font-size: 1.8rem;
+        }
 
         a {
             text-decoration: none;
             color: #fff;
+            font-weight: bold;
         }
     }
 `;
@@ -55,7 +65,7 @@ const Contact = () => {
                 >
                     <ContactContainer>
                         
-                        <h4>Let's build something together</h4>
+                        <h3>Let's build something together</h3>
                         <p>We'd like to hear from you
                             <br></br>
                                 Send us a message
@@ -76,23 +86,23 @@ const Contact = () => {
                 >
                     <ContactContainer>
                         
-                        <h4>Peru</h4>
+                        <h3>Peru</h3>
                         <p>Lima
                             <br></br>
                                 Call us at:
                             <br></br>
-                                <a href="/">(+51) 992 807 020</a>
+                                <a href="/" alt="Phone Number Peru">(+51) 992 807 020</a>
                         </p>
 
                     </ContactContainer>
                     
                     <ContactContainer>
-                        <h4>Canada</h4>
+                        <h3>Canada</h3>
                         <p>Montreal
                             <br></br>
                                 Call us at:
                             <br></br>
-                                <a href="/" >+1 438 320-9499</a>
+                                <a href="/" alt="Phone Number Canada" >+1 438 320-9499</a>
                         </p>
                     </ContactContainer>
                 </div>

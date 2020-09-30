@@ -22,16 +22,10 @@ const Layout = (props) => {
                         margin: 0 0 1.5rem 0;
                         line-height: 1;
                     }
-                    h1, h2 {
-                        font-family: 'Roboto', serif;
+                    h1, h2, h3 , h4, h5 {
+                        font-family: 'Oswald', sans-serif;
                     }
-                    h1 {
-                        font-family: 'PT Sans', sans-serif;
-                    }
-
-                    p, span, li , ul {
-                        font-family: 'Roboto', serif;
-                    }
+                      
                     ul {
                         list-style: none;
                         margin: 0;
@@ -39,10 +33,12 @@ const Layout = (props) => {
                     }
                 `}
             />
+
+            
+
             <Helmet>
-                <title>Consulting Tech</title>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-                <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+                <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"/> 
             </Helmet>   
             
             <Header />

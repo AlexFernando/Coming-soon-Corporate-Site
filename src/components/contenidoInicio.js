@@ -24,13 +24,13 @@ export const MainContainer = styled.div`
 
 export const Title = styled.span`
     font-size: 2rem;
-    font-weight: 300;
     text-transform: uppercase;
     color:#fff;
     line-height: 2;
+    font-family: 'Oswald', sans-serif;
 
     @media(min-width: 768px) {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 `
 
@@ -42,8 +42,8 @@ export const SubTitle = styled.h2 `
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 1;
-    letter-spacing: 1px;
-
+    letter-spacing: 3px;
+ 
     @media(min-width: 768px) {
         font-size: 5rem;
     }
@@ -70,6 +70,7 @@ export const TextContent = styled.div`
 
         &:last-of-type {
             margin-left: 2rem;
+            flex-direction: column;
         }
     }
 
@@ -78,6 +79,7 @@ export const TextContent = styled.div`
         letter-spacing: 0;
         margin-bottom: 2rem; 
         font-size: 1.8rem;
+        font-family: 'PT Sans', sans-serif;
     
         @media(min-width: 768px) {
             text-align: justify;
@@ -88,6 +90,11 @@ export const TextContent = styled.div`
 
 export const List =  styled.ul`
     letter-spacing: 0;
+
+    li {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: bold;
+    }
 `
 
 export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
@@ -109,22 +116,18 @@ const ContenidoInicio = () => {
             <Separator></Separator>
 
             <div>
-
-                <TextContent><p>Our proposal seeks to bring your business to automation based on the right combination of business, processes, and technology. We believe that these three aspects are the pillars that must be chosen properly for the business to achieve its business objectives and successfully position itself in the digital age.
-                Our proposal to approaching projects incorporates and is based on these three visions of your organization's activity. In this way, first of all, we seek to incorporate the ideal stuff who understand your business and its processes, to finally choose the right techniques and technologies for the project objectives.    
+                <TextContent>
+                    <p> Our proposal seeks to bring your business to automation based on the right combination of business, processes, and technology. We believe that these three aspects are the pillars that must be chosen properly for the business to achieve its business objectives and successfully position itself in the digital age.
+                        Our proposal to approaching projects incorporates and is based on these three visions of your organization's activity. In this way, first of all, we seek to incorporate the ideal stuff who understand your business and its processes, to finally choose the right techniques and technologies for the project objectives.    
                     </p>
-                    
-                      
-                    
-                    </TextContent>
+                </TextContent>
                 
                 <TextContent>
-                
-                        
-                        <List>
-                        <p> Our services can be applied in different sectors of the economy. 
-                        Those includes: </p>
-                        
+
+                    <p> Our services can be applied in different sectors of the economy. 
+                    Those includes: </p>
+
+                    <List>
                         <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Agriculture</li>
                         <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Banking</li>
                         <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Education</li>
@@ -132,12 +135,7 @@ const ContenidoInicio = () => {
                         <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Oil Sector</li>
                         <li><FontAwesomeIconStyled icon={faArrowAltCircleRight}/>Supply Chain</li>
                     </List>        
-                
-                        
-                        
-
-                        
-                    
+               
                 </TextContent>
             </div>
         </MainContainer>
