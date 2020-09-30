@@ -14,13 +14,12 @@ const Nav = styled.nav`
 const LinkStyled = styled(Link)`
     color: #FFF;
     font-size: 1.6rem;
-    font-weight: 700;
     line-height: 1rem;
     font-family: 'PT Sans', sans-serif;
     text-decoration: none;
     padding: 1rem;
     margin-right: 1rem;
-
+    
     &:last-of-type {
         margin-right: 0;
     }

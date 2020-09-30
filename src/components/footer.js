@@ -14,6 +14,7 @@ const FooterContainer = styled.div`
     align-items: center;
     padding: 2rem 0;
     color: #fff;
+    font-family: 'PT Sans', sans-serif;
 
     @media(min-width: 768px) {
         flex-direction: row
@@ -39,8 +40,6 @@ const ElementFooter = styled.div`
         }
     }
 
-    
-
     @media(min-width: 768px) {
 
         &:last-child {
@@ -50,12 +49,8 @@ const ElementFooter = styled.div`
         ul {
             justify-content: center;
         }
-
     }
-
-
 `
-
 
 const Footer = ({title}) => {
 
@@ -75,9 +70,9 @@ const Footer = ({title}) => {
 
                 <ElementFooter>
                     <ul>
-                        <li><a href="#mailgo" data-address="info" data-domain="3allez.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
-                        <li><a href="https://twitter.com/3Allez" target="_blank" rel="noopener norefferer"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                        <li><a><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                        <li><a href="#mailgo" alt="Send an Email" data-address="info" data-domain="3allez.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
+                        <li><a href="https://twitter.com/3Allez" alt="Share on Twitter" target="_blank" rel="noopener norefferer"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                        <li><a href="/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
                     </ul>
                 </ElementFooter>
             </FooterContainer>

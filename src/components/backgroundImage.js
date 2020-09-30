@@ -29,9 +29,10 @@ const TextoImagen = styled.div`
         text-transform: uppercase;
         font-size: 3.5rem;
         text-align: center;
+        letter-spacing: 4px;
 
         @media(min-width: 768px) {
-            font-size: 8rem;
+            font-size: 9rem;
         }
     }
 
@@ -39,6 +40,7 @@ const TextoImagen = styled.div`
         font-size: 1.6rem;
         line-height: 1.8;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
 
         @media(min-width: 768px) {
             font-size: 2rem;
@@ -73,6 +75,7 @@ const Button = styled.a`
     color: #FFF;
     cursor: pointer;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 
     @media(min-width: 768px) {
         display: flex;
@@ -96,7 +99,7 @@ const ImageBackground = () => {
     //get the image background using a graphql query    
     const { image } = useStaticQuery(graphql`
         query {
-            image:file(relativePath: { eq: "bg-multiple-lightbulbes.jpg"} ) {
+            image:file(relativePath: { eq: "bg-lightbulbes.jpg"} ) {
                 sharp: childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid_withWebp
@@ -123,8 +126,8 @@ const ImageBackground = () => {
                              color: #FFF;
                         }
                     `} 
-                         href="#mailgo" data-address="info" data-domain="3allez.com" >Contact Us</Button>
-                    <Button href="#about">Learn</Button>
+                         href="#mailgo" alt="Send an email" data-address="info" data-domain="3allez.com" >Contact Us</Button>
+                    <Button href="#about" alt="explore the website">Learn</Button>
                 </ButtonContainer>
             </TextoImagen>
         </ImageBgTech>    
