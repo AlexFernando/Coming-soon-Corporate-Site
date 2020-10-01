@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `3 Allez`,
+    title: `IT Consulting Company`,
     description: `Consulting Tech Firm - Take your business to the next level`,
     author: `IT Company`,
-    keywords: '[IT company, IT consulting companies, IT Services Company, it outsourcing companies]',
-    image: "/images/workspace.jpg", 
+    keywords: ['IT company', 'IT consulting companies', 'IT Services Company', 'it outsourcing companies'],
+    siteUrl: 'https://fervent-lewin-9d24e6.netlify.app/',
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -26,6 +26,28 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/assets`,
       },
+    },
+
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["300", "400", "700"],
+            },
+            {
+              family: "Oswald",
+              variants: ["400", "700"],
+            },
+            {
+              family: "PT Sans",
+              variants: ["400", "700"],
+            }
+          ]
+        }
+      }
     },
 
     `gatsby-transformer-sharp`,
