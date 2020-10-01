@@ -92,8 +92,6 @@ const Button = styled.a`
 
 `;
 
-
-
 const ImageBackground = () => {
 
     //get the image background using a graphql query    
@@ -108,7 +106,7 @@ const ImageBackground = () => {
             }
         }
     `);
-    
+
     return (
 
         <ImageBgTech tag="section" fluid={image.sharp.fluid} fadeIn="soft">
