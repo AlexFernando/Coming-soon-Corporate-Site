@@ -1,9 +1,11 @@
 import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
 import styled from '@emotion/styled';
-import Service from './service';
-import {Title, SubTitle, Separator, TextContent} from './contenidoInicio';
 import { css } from '@emotion/core';
+import Service from './service';
+import {Title, SubTitle, Separator, TextContent, LinkScrollUp, ScrollUpIcon} from './contenidoInicio';
+import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons'
+
 
 export const Container = styled.div`
 
@@ -12,6 +14,7 @@ export const Container = styled.div`
     border-bottom: 1px solid #22165b;
     background-color: #0b071d;
     padding: 25% 10%;
+    position: relative;
 
     @media(min-width: 768px) {
         padding: 15% 10%;
@@ -104,6 +107,8 @@ const ServicesBrief = () => {
                    
                 ))}
             </ListOfServices>              
+            
+            <LinkScrollUp to={`/`}> <ScrollUpIcon icon={faAngleDoubleUp}/></LinkScrollUp>
         </Container>
     );
 }

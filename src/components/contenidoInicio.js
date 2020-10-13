@@ -1,12 +1,15 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
+import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons'
 
 export const MainContainer = styled.div`
-    border-bottom: 1px solid #22165b;
+    border-bottom: 1px solid #22165b;    
     background-color: #0b071d;
     padding: 25% 10%;
+    position: relative;
 
     @media(min-width: 768px) {
         padding: 15% 10%;
@@ -56,7 +59,7 @@ export const Separator = styled.span`
     margin-top: 3rem;
     margin-bottom: 5rem;
     border-radius: 20px;
-    background: linear-gradient(to right, #636BFF, #1b9dff);
+    background-color: #636BFF;
 `
 
 export const TextContent = styled.div`
@@ -103,6 +106,28 @@ export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
         color: #1b9dff;
 `
 
+export const ScrollUpIcon = styled(FontAwesomeIcon)`
+        font-family: 'Font Awesome\ 5 Free';
+        color: #0b071d;
+        font-size:3rem;
+        background-color: #1b9dff;
+        padding: 1.2rem;
+        border-radius: 50%;
+        border: 1px solid #1b9dff;
+        width: 200px;
+        height: 20px; 
+`
+
+export const LinkScrollUp = styled(Link)`
+        position: absolute;
+        bottom: 6rem;
+        right: 8rem;
+        
+        @media (max-width: 768px) {
+            display: none;
+        }
+`
+
 const ContenidoInicio = () => {
 
     return (
@@ -138,6 +163,9 @@ const ContenidoInicio = () => {
                
                 </TextContent>
             </div>
+
+            <LinkScrollUp to={`/`}> <ScrollUpIcon icon={faAngleDoubleUp}/></LinkScrollUp>
+            
         </MainContainer>
      );
 }

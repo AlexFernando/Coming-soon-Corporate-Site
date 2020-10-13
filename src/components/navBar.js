@@ -88,7 +88,7 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-const Navbar = ({navBox}) => {
+const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   
   return (

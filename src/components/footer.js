@@ -70,9 +70,9 @@ const Footer = ({title}) => {
 
                 <ElementFooter>
                     <ul>
-                        <li><a href="#mailgo" alt="Send an Email" data-address="info" data-domain="3allez.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
-                        <li><a href="https://twitter.com/3Allez" alt="Share on Twitter" target="_blank" rel="noopener norefferer"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                        <li><a href="/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                        <li><a href="#mailgo" alt="Send an Email" aria-label="Send Us an Email" data-address="info" data-domain="3allez.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
+                        <li><a href="https://twitter.com/3Allez" alt="Share on Twitter" aria-label="Link to Twitter" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                        <li><a href="/"><FontAwesomeIcon aria-label="Link to Linkedin" icon={faLinkedin}/></a></li>
                     </ul>
                 </ElementFooter>
             </FooterContainer>

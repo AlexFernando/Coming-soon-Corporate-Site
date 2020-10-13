@@ -1,6 +1,5 @@
 import React from 'react';
 import {css} from '@emotion/core';
-import NavInfo from './navInfo';
 import NavBar from './navBar';
 
 const Header = () => {
@@ -11,8 +10,6 @@ const Header = () => {
                 padding: 0rem;
             `}
         >
-           
-
             <NavBar />
             <div
                 css={css`

@@ -84,7 +84,7 @@ const Button = styled.a`
         font-size: 2rem;
     }
 
-    &:hover {
+    &:last-of-type&:hover {
         background-color: #FFF;
         color: #000;
         transition: all 0.4s;
@@ -118,14 +118,11 @@ const ImageBackground = () => {
     
                 <ButtonContainer>
                     <Button css = {css`  
-                        background: linear-gradient(45deg, #051dff 0, #b500ff 100%);
+                        background-color: #452267;
                         
-                        &:hover {
-                             color: #FFF;
-                        }
                     `} 
-                         href="#mailgo" alt="Send an email" data-address="info" data-domain="3allez.com" >Contact Us</Button>
-                    <Button href="#about" alt="explore the website">Learn</Button>
+                         href="#mailgo" alt="Send an email" data-address="info" data-domain="3allez.com" >Talk to Us!</Button>
+                    <Button href="#about" alt="explore the website">Get to know Us</Button>
                 </ButtonContainer>
             </TextoImagen>
         </ImageBgTech>    
