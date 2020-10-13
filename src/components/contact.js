@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import {Title, SubTitle, Separator} from './contenidoInicio';
+import {Title, SubTitle, Separator, LinkScrollUp, ScrollUpIcon} from './contenidoInicio';
+import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons'
 import {Container} from './servicesBrief';
 
 const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     flex: 0 0 50%;
+    position: relative;
 
     h3 {
         font-size: 1.8rem;
@@ -108,6 +110,7 @@ const Contact = () => {
                 </div>
             </div>
             
+            <LinkScrollUp to={`/`}> <ScrollUpIcon icon={faAngleDoubleUp}/></LinkScrollUp>
         </Container>
 
     );

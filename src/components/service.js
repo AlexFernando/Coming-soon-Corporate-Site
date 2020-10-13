@@ -10,6 +10,7 @@ const ServiceInfo = styled.div`
     flex-direction: column;
     text-align: left;
     margin-bottom: 2rem;
+    font-family: 'PT Sans', sans-serif;
     
     @media (min-width: 768px) {
         padding: 0 2rem;
@@ -33,8 +34,8 @@ const ServiceInfo = styled.div`
         }
 
         small {
-            font-size: 1.2rem;
-            font-style: normal;
+            font-size: 1.3rem;
+            font-weight: bold;
             letter-spacing: 2px;
             text-transform: uppercase;
             color: #878787;
@@ -67,6 +68,7 @@ const Service = ({service}) => {
                     @media (min-width: 801px) {
                         width: 220px;
                         height: 150px;
+                        border-radius: 5px;
                     }
                 `}  
                 fluid = {image.sharp.fluid} 

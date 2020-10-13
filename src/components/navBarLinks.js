@@ -12,17 +12,17 @@ const NavItem = styled(Link)`
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 5px;
   
   :hover {
     background-color: rgba(34,49,63, .7);
-    padding: 1rem;
-    border: 2px solid #fff;
-    border-radius: 5px;
     color: #fff;
     transition: all 0.4s;
   }
   @media (max-width: 768px) {
-    padding: 20px 0;
+    padding: 10px 10px;
     font-size: 1.5rem;
     z-index: 6;
   }
