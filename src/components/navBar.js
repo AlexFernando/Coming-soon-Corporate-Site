@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import NavbarLinks from "./navBarLinks"
 import Logo from "./logo"
 import styled from '@emotion/styled';
+import DropDown from './dropDown';
 
 const Navigation = styled.nav`
   height: 10vh;
@@ -48,8 +49,9 @@ const Navbox = styled.div`
     flex-direction: column;
     position: fixed;
     width: 100%;
-    height: 40%;
+    height: 100%;
     justify-content: flex-start;
+    align-items: flex-start;
     padding-top: 10vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
@@ -88,10 +90,34 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
+
+const DropDownContainer = styled.div`
+    
+    height: 100%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+`;
+
 const Navbar = () => {
+  
   const [navbarOpen, setNavbarOpen] = useState(false)
   
+  const handleNavBarState = (navbarOpen) => {
+    setNavbarOpen(navbarOpen);
+  }
+
+  // dropDown 
+
+  const [dropDownOpen, setDropDownOpen] = useState(false);
+
+  const dropDownControl = (dropDownOpen) => {
+    setDropDownOpen(dropDownOpen)
+  };
+
   return (
+    <>
     <Navigation>
       <Logo />
       <Toggle
@@ -102,14 +128,22 @@ const Navbar = () => {
       </Toggle>
       {navbarOpen ? (
         <Navbox>
-          <NavbarLinks />
+          <NavbarLinks navBarStateFromParent = {handleNavBarState} dropDownControl = {dropDownControl} dropDownOpen = {dropDownOpen}/>
         </Navbox>
       ) : (
         <Navbox open>
-          <NavbarLinks />
+          <NavbarLinks navBarStateFromParent = {handleNavBarState} dropDownControl = {dropDownControl} dropDownOpen = {dropDownOpen}/>
         </Navbox>
       )}
     </Navigation>
+
+    {dropDownOpen ?
+      <DropDownContainer>
+          <DropDown dropDownControl = {dropDownControl}/> 
+      </DropDownContainer>
+    : null}
+    
+    </>
   )
 }
 
